@@ -1,0 +1,592 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: linear-gradient(6.8deg, #fafafa 28%, transparent 10%), url("https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400&w=1025") no-repeat center center/cover;
+  padding-top: 125px;
+}
+
+.header__info {
+  text-align: center;
+  margin-left: 150px;
+}
+
+.header__infoImage {
+  width: 151px;
+  height: 151px;
+  border-radius: 50%;
+}
+
+.header__nameZh {
+  font-size: 42px;
+  margin-top: 11px;
+}
+
+.header__nameEn {
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 19px;
+}
+
+.header__job {
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 19px;
+}
+
+.header__detail {
+  margin-left: 136px;
+}
+
+.header__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.header__locationImage {
+  width: 42px;
+  height: 42px;
+  background: url(../images/Icon-location.png) no-repeat center center;
+}
+
+.header__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 0;
+  color: #fff;
+}
+
+.header__emailImage {
+  width: 42px;
+  height: 42px;
+  background: url(../images/Icon-mail.png) no-repeat center center;
+}
+
+.header__github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.header__githubImage {
+  width: 42px;
+  height: 42px;
+  background: url(../images/icon-github.png) no-repeat center center;
+}
+
+.footer {
+  color: #fff;
+  background: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center/cover;
+  padding: 34px 0 32px;
+  text-align: center;
+}
+
+.content {
+  line-height: 1.5em;
+}
+
+.content__title {
+  color: #051886;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 130px 0 48px;
+}
+
+.content__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content__skillBox {
+  width: 30%;
+  text-align: center;
+  padding: 3% 0;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.content__skillTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 3% 0;
+  color: #4A4A4A;
+}
+
+.content__skillList {
+  text-align: left;
+  margin: 0 20%;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.content__works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content__workBox {
+  display: block;
+  width: 30%;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.content__workBox:hover {
+  -webkit-box-shadow: 3px 3px 3px #bdbbbb;
+          box-shadow: 3px 3px 3px #bdbbbb;
+}
+
+.content__workImage {
+  padding: 35px 0;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.content__workTitle {
+  font-weight: bold;
+  color: black;
+  margin: 9px 8px;
+}
+
+.content__workText {
+  color: black;
+  margin: 9px 8px;
+}
+
+.content__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__aboutImage {
+  width: 30%;
+  margin: 0 5% 5% 15%;
+}
+
+.content__aboutText {
+  width: 40%;
+  margin: 0 5%;
+}
+
+.content__dotStart {
+  width: 32px;
+  height: 37px;
+  margin: 0 auto;
+}
+
+.content__experience {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__experienceItem {
+  position: relative;
+  padding: 20px 0;
+}
+
+.content__experienceItem::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: #D8D8D8;
+}
+
+.content__experienceItem::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 32.5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 30px;
+  height: 100%;
+  background: url("../images/dot-timeItem.png") no-repeat center center/contain;
+  z-index: 1;
+}
+
+.content__experienceCard {
+  position: relative;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.content__experienceCard--left {
+  text-align: right;
+  left: 15%;
+  -webkit-box-shadow: -3px 3px 3px #bdbbbb;
+          box-shadow: -3px 3px 3px #bdbbbb;
+}
+
+.content__experienceCard--right {
+  right: -55%;
+  -webkit-box-shadow: 3px 3px 3px #bdbbbb;
+          box-shadow: 3px 3px 3px #bdbbbb;
+}
+
+.content__experienceButtom {
+  width: 20px;
+  height: 5px;
+  background-color: #D8D8D8;
+  margin: 0 auto;
+}
+
+.content__experienceItemBody {
+  border: 2px solid #FB56BF;
+  padding: 1% 2.5%;
+  background-color: #fff;
+}
+
+.content__experienceItemHeader {
+  position: relative;
+}
+
+.content__experienceItemHeader--left::after {
+  content: '';
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 13px solid #FB56BF;
+  left: 100%;
+  top: 20%;
+}
+
+.content__experienceItemHeader--right::before {
+  content: '';
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 13px solid #FB56BF;
+  right: 100%;
+  top: 20%;
+}
+
+.content__experienceTime {
+  background: #FB56BF;
+  color: #fff;
+  padding: 1% 5%;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+}
+
+.content__experienceDepartment {
+  color: #8A1737;
+  font-weight: bold;
+}
+
+.content__experienceCompany {
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content__experienceDescribe {
+  font-size: 12px;
+  color: #9B9B9B;
+}
+
+.border-b-orange {
+  border-bottom: 6px solid #F58D23;
+}
+
+.border-b-blue {
+  border-bottom: 6px solid #7092BE;
+}
+
+.border-b-purple {
+  border-bottom: 6px solid #6762A6;
+}
+
+.bg-yellow {
+  background: #E0C240;
+}
+
+.bg-dark {
+  background: #424242;
+}
+
+.bg-green {
+  background: #59BFB3;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-bottom: 50px;
+    display: block;
+    background: url("https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400&w=1025") no-repeat center center/cover;
+  }
+  .header__info {
+    margin: 0 auto;
+  }
+  .header__nameEn, .header__job, .header__info {
+    color: #fff;
+  }
+  .header__detail {
+    margin: 5% auto;
+  }
+  .header__location, .header__email, .header__github {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content__skills {
+    display: block;
+  }
+  .content__skillBox {
+    width: 60%;
+    margin: 5% auto;
+  }
+  .content__works {
+    display: block;
+  }
+  .content__workBox {
+    width: 50%;
+    margin: 5% auto;
+  }
+  .content__experienceCard--right {
+    right: -58%;
+  }
+  .content__experienceCard--left {
+    left: 12.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content__skillList {
+    margin: 0 5%;
+  }
+  .content__experienceCard--right {
+    right: -60%;
+  }
+  .content__experienceCard--left {
+    left: 10%;
+  }
+  .content__experienceItem::after {
+    bottom: 37%;
+  }
+  .content__about {
+    display: block;
+  }
+  .content__aboutImage {
+    width: 60%;
+    text-align: center;
+  }
+  .content__aboutText {
+    width: 80%;
+    margin: 5% auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .content__dotStart {
+    margin: 0 0 0 4.5%;
+  }
+  .content__experienceItem::before, .content__experienceItem::after {
+    left: 10%;
+  }
+  .content__experienceItemHeader--left::after {
+    border-style: solid;
+    border-width: 10px 13px 10px 0;
+    border-color: transparent #FB56BF transparent transparent;
+    left: -6%;
+  }
+  .content__experienceButtom {
+    margin: 0 0 0 6.75%;
+  }
+  .content__experienceCard {
+    width: 65%;
+    text-align: left;
+  }
+  .content__experienceCard--right {
+    right: -25%;
+  }
+  .content__experienceCard--left {
+    left: 25%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

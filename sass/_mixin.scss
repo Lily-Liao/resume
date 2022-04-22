@@ -1,0 +1,11 @@
+$font-m: 20px;
+$font-s:14px;
+$font-xs: 12px;
+@mixin hide-text($width, $height) {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: $width;
+    height: $height;
+    display: block;
+}
